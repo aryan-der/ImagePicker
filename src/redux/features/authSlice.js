@@ -63,14 +63,12 @@ const authSlice = createSlice({
                 state.error = null;
 
             } else {
-
                 state.error = "Invalid email or password";
-
             }
 
         },
 
-        // ⭐ NEW: Face Login
+        //  Face Login
         faceLogin(state) {
 
             const userInfo = { faceUser: true };
@@ -94,9 +92,7 @@ const authSlice = createSlice({
         },
 
         clearError(state) {
-
             state.error = null;
-
         }
 
     },
